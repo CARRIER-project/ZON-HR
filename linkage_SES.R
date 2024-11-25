@@ -43,7 +43,7 @@ data_ZONHR$PC4 <- substring(data_ZONHR$PC6, 1, 4)
 # The following line defines the variable type of the 'PC4' variable as numeric.
 data_ZONHR$PC4 <- as.numeric(data_ZONHR$PC4)
 
-# The following line adds the 'SES' variable to the object 'data_ZONHR' by matching data objects 'data_ZONHR' and 'data_SES' on 'PC4' and 'year'.
+# The following line adds the 'SES' variable to the object 'data_ZONHR' by matching data objects 'data_ZONHR' and 'data_SES' on 'year' and 'PC4'.
 data_ZONHR <- merge(data_ZONHR,
                     data_SES,
                     all.x = TRUE,
